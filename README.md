@@ -1,2 +1,2 @@
 # CV-html-css
-Mon CV sous forme de site web Html/Css
+Voilà mon CV que j'ai codé sous HTML et CSS
