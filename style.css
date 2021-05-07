@@ -1,6 +1,6 @@
 body 
 {
-        background-image: url("Large jpeg & png_Background_9_E.jpg");
+        background-image: url("fond-beige.jpg");
         background-attachment: fixed; /* Le fond restera fixe */
 }
 
@@ -14,6 +14,11 @@ h1
         font-style:oblique
 }
 
+h1
+{
+        border: 4px red ridge
+}
+
 p
 {
     font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
@@ -21,18 +26,13 @@ p
 
 h2
 {
-        font-style:italic
+        font-style:italic;
+        font-weight:bold;
+        text-decoration:overline;
+        font-size:2rem;
+        margin-top:50px
 }
 
-h2
-{
-        font-weight:normal
-}
-
-h2
-{
-        text-decoration:overline
-}
 
 h1
 {
@@ -42,4 +42,36 @@ h1
 p
 {
         text-align:right
+}
+
+ul
+{
+        border-top: 7px darkgreen groove;
+}
+
+ul li
+{
+        margin: 20px 0;
+}
+
+.container
+{
+        position: relative;
+        width: 400px;
+}
+
+.container .legende
+{
+        position: absolute;
+        top:40%;
+        left:20%;
+        background-color: rgba(200,200,200,0.95);
+        opacity:0;
+        -webkit-transition: opacity .5s ease;
+      transition: opacity .5s ease;
+}
+
+.container:hover .legende 
+{
+        opacity:1;
 }
